@@ -11,7 +11,7 @@
 
         #home {
             margin-top: 50px;
-            background-image: url(/icons/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
+            background-image: url(./icons/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -22,7 +22,7 @@
 
         #home>div {
             width: 50%;
-            background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.654);
 
             padding: 10%;
         }
@@ -32,36 +32,35 @@
 animation: ltr 1.5s linear;
         
         }
-@keyframes ltr{
-    0%{
-        margin-left: -20vw}
 
-    100%{
-        margin-left: 0;
-    }
-}
         #home div h3 {
             font-size: 2rem;
             color: transparent;
-            animation: fade 2s linear 1.5s;
-    
+            animation: fade 2s linear 1.5s forwards ;
+            
         }
         @keyframes fade {
-            0%{
+            from{
 color: transparent;
             }
-            100%{
+            to{
                 color: rgb(0, 43, 81);
             }
         }
-
+@keyframes ltr{
+from {
+    margin-left: -20vw;
+}
+to {
+    margin-top: auto;
+}
+}
         #home div p {
             font-size: 1.5rem;
             text-align: left;
             margin: 0;
             color: rgba(0, 0, 0, 0.851);
-            animation: fade ;
-                }
+                            }
 
         .box {
             display: block;
@@ -97,7 +96,10 @@ color: transparent;
             font-size: 1rem;
             text-align: left;
         }
-
+#home img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
 
         #contact img {
             width: 2rem;
@@ -124,7 +126,7 @@ color: transparent;
         </div>
         <div>
             <img src="./icons/me.jpg" width="100%" style="border: 1vw solid rgb(0, 43, 81);"
-                alt=".my photo">
+                alt=".my photo" >
         </div>
     </section>
     <section id="about">
@@ -135,31 +137,31 @@ color: transparent;
         <div class="skill">
             <h3>My skills</h3>
             <ul>
-                <li>html  <img src="/icons/html5.svg" alt="logo" ></li>
-                <li>CSS <img src="/icons/css3-alt.svg" alt="logo"></li>
-                <li>Javascript <img src="/icons/js.svg" alt="logo"></li>
+                <li>html  <img src="./icons/html5.svg" alt="logo" ></li>
+                <li>CSS <img src="./icons/css3-alt.svg" alt="logo"></li>
+                <li>Javascript <img src="./icons/js.svg" alt="logo"></li>
 
 
             </ul>
         </div>
-        <a download href="resume.pdf">Full Resume <img src="/icons/download-solid (1).svg" alt="download" width="20rem"> </a>
+        <a download href="./resume.pdf">Full Resume <img src="./icons/download-solid (1).svg" alt="download" width="20rem"> </a>
     </section>
     <section id="project">
         <h2>Projects</h2>
         <hr>
         <p>Here you will find my some of my personal projects that i created in during my learning period. </p>
         <div class="box">
-            <div onclick="window.location='portfolio.html'">
+            <div onclick="window.location='./portfolio.html'">
                 <img src="./icons/portfolio.jpg" alt="portfoliyo" width="100%">
                 <h4>Portfolio</h4>
                 <p>A Portfolio website is a unique way to showcase you work and let other know about yourself. <a
-                        href="portfolio.html">show more...</a></p>
+                        href="./portfolio.html">show more...</a></p>
             </div>
             <div onclick="window.location='game rock paper scissor.html'">
                 <img src="./icons/game rock.jpg" alt="game" width="100%">
                 <h4>Game website</h4>
                 <p>Rock paper Scissors is an fun and easy hand game played between two people. Players start each round <a
-                        href="game rock paper scissor.html">show more...</a></p>
+                        href=./game rock paper scissor.html">show more...</a></p>
             </div>
         </div>
     </section>
@@ -171,8 +173,8 @@ color: transparent;
 
         <p>
             <a href="mailto:asthamodi185@gmail.com"><img src="./icons/envelope-solid.svg" alt="email"></a>
-            <a href="https://www.linkedin.com/in/astha-modi-295327253"><img src="/icons/linkedin.svg" alt="linkedin"></a>
-            <a href="https://github.com/Asthamodi185"><img src="/icons/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/astha-modi-295327253"><img src="./icons/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/Asthamodi185"><img src="./icons/github.svg" alt="github"></a>
         </p>
 
     </section>
