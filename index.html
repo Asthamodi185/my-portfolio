@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asthamodi</title>
+    <style>
+        @import url(style.css);
+
+        #home {
+            margin-top: 50px;
+            background-image: url(/icons/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+
+            width: 100vw;
+        }
+
+        #home>div {
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.6);
+
+            padding: 10%;
+        }
+
+        #home div h1 {
+            font-size: 2.5rem;
+animation: ltr 1.5s linear;
+        
+        }
+@keyframes ltr{
+    0%{
+        margin-left: -20vw}
+
+    100%{
+        margin-left: 0;
+    }
+}
+        #home div h3 {
+            font-size: 2rem;
+            color: transparent;
+            animation: fade 2s linear 1.5s;
+    
+        }
+        @keyframes fade {
+            0%{
+color: transparent;
+            }
+            100%{
+                color: rgb(0, 43, 81);
+            }
+        }
+
+        #home div p {
+            font-size: 1.5rem;
+            text-align: left;
+            margin: 0;
+            color: rgba(0, 0, 0, 0.851);
+            animation: fade ;
+                }
+
+        .box {
+            display: block;
+            width: 80vw;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box div {
+            display: inline-block;
+            min-width: 7vw;
+            max-width: 300px;
+            height: 320px;
+            padding: 3%;
+            margin: 5%;
+            background-color: white;
+        }
+
+        .box div:hover,
+        #contact img:hover {
+            box-shadow: .5rem .5rem 1rem black;
+            transform: scale(1.1);
+
+        }
+
+        .box div h4 {
+            margin-top: 3%;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .box>div>p {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+
+        #contact img {
+            width: 2rem;
+            margin: 1% 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="#home" >Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#project">Project</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div>
+            <h1>Hi,</h1>
+            <h3>I am Astha Modi</h3>
+            <p>a college student pursing a BCA course and a Fronted web-developer interested in an internship or an
+                opportunity for my career.</p>
+        </div>
+        <div>
+            <img src="./icons/me.jpg" width="100%" style="border: 1vw solid rgb(0, 43, 81);"
+                alt=".my photo">
+        </div>
+    </section>
+    <section id="about">
+        <h2>About me</h2>
+        <hr>
+        <p>Here you will find more information about me, what i do, my skills in programming and technology and my
+            resume.</p>
+        <div class="skill">
+            <h3>My skills</h3>
+            <ul>
+                <li>html  <img src="/icons/html5.svg" alt="logo" ></li>
+                <li>CSS <img src="/icons/css3-alt.svg" alt="logo"></li>
+                <li>Javascript <img src="/icons/js.svg" alt="logo"></li>
+
+
+            </ul>
+        </div>
+        <a download href="resume.pdf">Full Resume <img src="/icons/download-solid (1).svg" alt="download" width="20rem"> </a>
+    </section>
+    <section id="project">
+        <h2>Projects</h2>
+        <hr>
+        <p>Here you will find my some of my personal projects that i created in during my learning period. </p>
+        <div class="box">
+            <div onclick="window.location='portfolio.html'">
+                <img src="./icons/portfolio.jpg" alt="portfoliyo" width="100%">
+                <h4>Portfolio</h4>
+                <p>A Portfolio website is a unique way to showcase you work and let other know about yourself. <a
+                        href="portfolio.html">show more...</a></p>
+            </div>
+            <div onclick="window.location='game rock paper scissor.html'">
+                <img src="./icons/game rock.jpg" alt="game" width="100%">
+                <h4>Game website</h4>
+                <p>Rock paper Scissors is an fun and easy hand game played between two people. Players start each round <a
+                        href="game rock paper scissor.html">show more...</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact me</h2>
+        <hr>
+        <p> You can simply contact me on diffrent social platform by click on the following social links.</p>
+
+
+        <p>
+            <a href="mailto:asthamodi185@gmail.com"><img src="./icons/envelope-solid.svg" alt="email"></a>
+            <a href="https://www.linkedin.com/in/astha-modi-295327253"><img src="/icons/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/Asthamodi185"><img src="/icons/github.svg" alt="github"></a>
+        </p>
+
+    </section>
+    <footer>
+        &copy;copyright 2023 . Made by <span style="color: yellow;">Astha Modi</span>
+    </footer>
+    
+</body>
+</html>
